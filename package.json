@@ -37,6 +37,7 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
+    "@prisma/client": "5.18.0",
     "axios": "^1.7.3",
     "child_process": "^1.0.2",
     "cors": "^2.8.5",
@@ -45,6 +46,7 @@
     "express": "^4.19.2",
     "find-process": "^1.4.7",
     "ip": "^2.0.1",
+    "prisma": "^5.18.0",
     "web3": "^4.11.1"
   }
 }
