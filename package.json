@@ -1,0 +1,39 @@
+{
+  "name": "@luxfi/mpc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/node.ts",
+  "_moduleAliases": {
+    "@": "dist"
+  },
+  "scripts": {
+    "dev": "nodemon",
+    "start": "ts-node-dev src/node.ts",
+    "build": "tsc && tsc-alias",
+    "server": "node dist/node.js",
+    "production": "set PORT=80&&set ENVIRONMENT=PRODUCTION&&ts-node src/node.ts",
+    "lint": "eslint src/**/*.ts",
+    "format": "eslint src/**/*.ts --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.1",
+    "@typescript-eslint/parser": "^8.0.1",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.10",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
